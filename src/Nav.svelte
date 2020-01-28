@@ -2,6 +2,7 @@
   import { Router, link } from 'svelte-routing'
   import { onMount } from 'svelte'
   import { fly } from 'svelte/transition'
+  import NavLink from './NavLink.svelte'
 
   onMount(() => {
     visible = true
@@ -12,11 +13,23 @@
 
 <nav>
   {#if visible}
-    <a href="/" use:link transition:fly="{{x: -200, duration: 800}}"><h1>Santiago<br>Quintana</h1></a>
-    <a href="/bio" use:link transition:fly="{{x: -200, duration: 1000}}">Bio</a>
-    <a href="/art" use:link transition:fly="{{x: -200, duration: 1200}}">Art</a>
-    <a href="/tech" use:link transition:fly="{{x: -200, duration: 1400}}">Tech</a>
-    <a href="/contact" use:link transition:fly="{{x: -200, duration: 1600}}">Contact</a>
+    <div transition:fly="{{x: -200, duration: 800}}">
+      <NavLink to="/" header="{true}">
+        <h1>Santiago<br>Quintana</h1>
+      </NavLink>
+    </div>
+    <div transition:fly="{{x: -200, duration: 1000}}">
+      <NavLink to="bio">Bio</NavLink>
+    </div>
+    <div transition:fly="{{x: -200, duration: 1200}}">
+      <NavLink to="art">Art</NavLink>
+    </div>
+    <div transition:fly="{{x: -200, duration: 1400}}">
+      <NavLink to="tech">Tech</NavLink>
+    </div>
+    <div transition:fly="{{x: -200, duration: 1600}}">
+      <NavLink to="contact">Contact</NavLink>
+    </div>
   {/if}
 </nav>
 
@@ -29,12 +42,9 @@
     text-align: right;
   }
 
-  a {
+  div {
     margin-bottom: 15px;
   }
 
-  .active {
-    margin-right: -5px;
-    transition: margin-right 1s;
-  }
+  
 </style>
