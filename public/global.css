@@ -12,10 +12,15 @@ body {
 }
 
 a {
+  color: inherit;
   margin-right: 0;
 	text-decoration: none;
   font-size: 20px;
   transition: margin-right 500ms;
+}
+
+nav a {
+  font-size: 25px;
 }
 
 a.active {
