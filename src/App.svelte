@@ -52,6 +52,7 @@
 
   article {
     position: absolute;
+    padding-right: 20px;
   }
 
   .content {
@@ -59,6 +60,12 @@
     margin: 40px;
     padding: 20px;
     border: 1px solid black;
+    overflow: scroll;
+    position: relative;
+  }
+  
+  .content::-webkit-scrollbar {
+    display: none;
   }
 
   h1 {
