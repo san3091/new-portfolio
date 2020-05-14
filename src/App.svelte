@@ -1,7 +1,7 @@
 <script>
   import { Router, Route } from 'svelte-routing'
   import { fade } from 'svelte/transition';
-  import Nav from './Nav.svelte'
+  import Nav from './components/Nav.svelte'
   import Bio from './Bio.svelte'
   import Art from './Art.svelte'
 
@@ -9,29 +9,40 @@
 
   let nextVisible = true
   let navigating = false
+  const navItems = [{
+      route: '/',
+      title: '<h1>Santiago <br> Quintana</h1>',
+      isHeader: true
+    },
+    { route: 'bio',
+      title: 'Bio'
+    },
+    {
+      route: 'art',
+      title: 'Art'
+    },
+    {
+      route: 'tech',
+      title: 'Tech'
+    },
+    {
+      route: 'contact',
+      title: 'Contact'
+    }
+  ]
 
-  const handleOutroEnd = () => {
-    console.log("outro end")
-  }
 
-  const handleIntroStart = () => {
-    console.log("intro start")
-  }
 </script>
 
 <main>
   <Router url="{url}">
-    <Nav />
+    <Nav navItems={navItems}/>
     <section class="content">
       <Route path="bio">
-        <article in:fade={{delay: 500, duration: 400}} out:fade on:introstart={handleIntroStart} on:outroend={handleOutroEnd}>
           <Bio />
-        </article>
       </Route>
       <Route path="art">
-        <article in:fade={{delay: 500, duration: 400}} out:fade on:introstart={handleIntroStart} on:outroend={handleOutroEnd}>
           <Art />
-        </article>
       </Route>
       <Route path="tech">
       </Route>
@@ -50,30 +61,18 @@
     height: 100%;
   }
 
-  article {
-    position: absolute;
-    padding-right: 20px;
-  }
 
   .content {
-    flex: 3;
-    margin: 40px;
-    padding: 20px;
-    border: 1px solid black;
-    overflow: scroll;
     position: relative;
+    display: flex;
+    flex: 1;
+    margin: 40px;
+    border: 1px solid black;
+    width: 100%;
   }
   
   .content::-webkit-scrollbar {
     display: none;
-  }
-
-  h1 {
-    font-size: 30px;
-  }
-
-  p {
-    font-size: 18px;
   }
 
 </style>
