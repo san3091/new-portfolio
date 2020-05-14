@@ -28,8 +28,6 @@
     text-align: center;
     justify-self: flex-end;
     width: 80%;
-    position: absolute;
-    bottom: 0;
     height: 64px;
   }
 
@@ -46,7 +44,7 @@
   }
 
   .selected {
-    transform: translateY(-20px);
+    transform: translateY(-15px);
     color: red;
   }
 </style>
