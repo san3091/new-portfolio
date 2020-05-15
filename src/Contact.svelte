@@ -14,7 +14,8 @@
     errorMessage = newMessage.join(', ')
   }
 
-  const submitForm = () => {
+  const submitForm = (e) => {
+    e.preventDefault()
     if (name && email && message && !honeypot && !sending) {
       sending = true
       var url = 'https://script.google.com/macros/s/AKfycbzRZDcDygipswfktZnpvNlzkZr95KF2YgPocqwkQg/exec'
@@ -36,26 +37,22 @@
   }
 </script>
 
-<div id='contact'
-  transition:fade>
-  <div >
-    <h2>How might we.. work together?</h2>
-  </div>
+<div id='contact' transition:fade>
   {#if !messageSent}
     <form>
-        <label for='name'>Name</label>
         <input id='name' bind:value={name} type='text' name='name'>
-        <label for='email'>Email</label>
+        <label for='name'>Name</label>
         <input id='email' bind:value={email} type='email' name='email'>
+        <label for='email'>Email</label>
         <input bind:value={honeypot} type="hidden" name='honeypot'>
-        <label for='message' >Message</label>
         <textarea id='message' bind:value={message} name='message'></textarea>
+        <label for='message' >Message</label>
       <button type='submit' name='submit'
         on:click={submitForm}>
         submit
       </button>
       {#if errorMessage}
-        <p>{errorMessage}</p>
+        <p class='error-message'>{errorMessage}</p>
       {/if}
     </form>
   {/if}
@@ -64,6 +61,10 @@
 <style>
  #contact {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
   }
@@ -71,20 +72,18 @@
   form {
     display: flex;
     flex-direction: column;
-    /* align-items: flex-end;
-    position: absolute; */
-    width: 100%;
-    /* margin-right: var(--margin);
-    bottom: 0;
-    right: 0; */
+    width: 500px;
+  }
+
+  label {
+    margin: 0 0 10px;
   }
 
   input, textarea {
-    /* width: 70%;
-    font-family: 'Montserrat';
-    color: darkslategray; */
-    /* background-color: transparent; */
     border-radius: 0;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: hsl(0, 0%, 97%);
   }
 
   textarea {
@@ -93,9 +92,21 @@
   }
 
   button {
-    margin: 0 0 var(--margin) 0;
-    width: 70%;
-    align-self: flex-end;
-    /* opacity: 0; */
+    margin-top: 10px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid black;
+    height: 40px;
+    transition: .5s;
+  }
+
+  button:hover {
+    background-color: hsl(0, 0%, 97%);
+  }
+
+  .error-message {
+    margin: auto;
+    font-size: 14px;
+    color: red;
   }
 </style>
