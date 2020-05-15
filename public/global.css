@@ -12,7 +12,7 @@ body {
 }
 
 a {
-  color: inherit;
+	color: inherit;
   margin-right: 0;
 	text-decoration: none;
   transition: margin-right 500ms;
