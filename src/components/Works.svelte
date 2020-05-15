@@ -4,17 +4,18 @@
 
   export let works
   let selectedWork = works[0]
-  
+
   const selectWork = (work) => selectedWork = work
 </script>
 
 <div class='works'>
-  <Work 
+  <Work
     header={selectedWork.title}
-    body={selectedWork.description} />
-  <SubNav 
-    navItems={works} 
-    selectedWork={selectedWork} 
+    body={selectedWork.description}
+    media={selectedWork.link.thumbnail} />
+  <SubNav
+    navItems={works}
+    selectedWork={selectedWork}
     selectWork={selectWork} />
 </div>
 
