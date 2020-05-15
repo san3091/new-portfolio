@@ -28,6 +28,7 @@
     display: flex;
     flex-direction: row;
     flex: 1;
+    box-sizing: border-box;
     width: 100%;
     padding: 20px 0;
   }
@@ -37,6 +38,15 @@
     box-sizing: border-box;
     padding: 20px;
     border-right: 1px solid black;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    object-fit: contain;
+    flex: 1;
   }
 
   .text {

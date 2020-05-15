@@ -83,7 +83,7 @@
     border-radius: 0;
     border: none;
     border-bottom: 1px solid black;
-    background-color: hsl(0, 0%, 97%);
+    background-color: hsl(0, 0%, 98%);
   }
 
   textarea {

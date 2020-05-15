@@ -41,18 +41,4 @@
   ]
 </script>
 
-<div class='art'>
-  <Works works={art} />
-</div>
-
-<style>
-  .art {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-  }
-</style>
+<Works works={art} />
