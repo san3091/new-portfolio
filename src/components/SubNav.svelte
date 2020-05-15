@@ -45,6 +45,7 @@
 
   button:hover {
     transform: translateY(-5px);
+    cursor: pointer;
   }
 
   .selected, .selected:hover{
