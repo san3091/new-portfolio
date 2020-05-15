@@ -43,7 +43,11 @@
     color: black;
   }
 
-  .selected {
+  button:hover {
+    transform: translateY(-5px);
+  }
+
+  .selected, .selected:hover{
     transform: translateY(-15px);
     color: red;
   }
