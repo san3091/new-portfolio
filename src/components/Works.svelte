@@ -12,7 +12,7 @@
   <Work
     header={selectedWork.title}
     body={selectedWork.description}
-    media={selectedWork.link.thumbnail} />
+    media={selectedWork.media} />
   <SubNav
     navItems={works}
     selectedWork={selectedWork}
