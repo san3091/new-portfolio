@@ -4,6 +4,7 @@
   import Nav from './components/Nav.svelte'
   import Bio from './Bio.svelte'
   import Art from './Art.svelte'
+  import Tech from './Tech.svelte'
   import Contact from './Contact.svelte'
 
   export let url = ""
@@ -40,12 +41,13 @@
     <Nav navItems={navItems}/>
     <section class="content">
       <Route path="bio">
-          <Bio />
+        <Bio />
       </Route>
       <Route path="art">
-          <Art />
+        <Art />
       </Route>
       <Route path="tech">
+        <Tech />
       </Route>
       <Route path="contact">
         <Contact />
