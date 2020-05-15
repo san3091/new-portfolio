@@ -4,6 +4,7 @@
   import Nav from './components/Nav.svelte'
   import Bio from './Bio.svelte'
   import Art from './Art.svelte'
+  import Contact from './Contact.svelte'
 
   export let url = ""
 
@@ -47,6 +48,7 @@
       <Route path="tech">
       </Route>
       <Route path="contact">
+        <Contact />
       </Route>
     <section>
   </Router>
