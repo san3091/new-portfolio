@@ -53,3 +53,12 @@ After my first pass I decided I wanted to train the next model using vowels <i>a
 Finally I generated some longer samples:
 
 I pulled these samples into Ableton and started the next phase of composition, which eventually produced the full piece:
+
+
+# Landing text
+
+Queer dancer tech witch musician based in Chicago, IL.
+
+I'm currently doing web development for [Catalytic Sound](https://catalyticsound.com/) and dance for [Lucky Plush Productions](https://www.luckyplush.com/). I love diagrams and structures and explore them through electronic music, machine learning, electronics, improvisation of all kinds, installation art, and all the intersections thereof.
+
+Follow my work on on [instagram](https://www.instagram.com/santiago_mvmt/), and see some of my work on [vimeo](https://vimeo.com/santiagoqg).
