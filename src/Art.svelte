@@ -57,7 +57,7 @@
       id: uid++,
       route: "art/abac",
       title: "ABAC",
-       description: "This piece draws from the ternary structure of the Sonata form in the classical period of music. At it's simplest it presents a theme (A) then a contrasting phrase (B) and then a recapitulation (A). The dancers side by side use gestures expressing anger, sensuality, concern, or sadness, growing each time further and further from the original gesture. tThe further from the origin the more chaotic the form, and the further away the dancers are. After reaching the depth of the recursive form, the dancers retrace their steps and come back to where they began. The music (also created by myself) follows this structure with a muted electronic beat that grows sharper as we work towards the middle of the form.",
+      description: "This piece draws from the ternary structure of the Sonata form in the classical period of music. At it's simplest it presents a theme (A) then a contrasting phrase (B) and then a recapitulation (A). The dancers side by side use gestures expressing anger, sensuality, concern, or sadness, growing each time further and further from the original gesture. tThe further from the origin the more chaotic the form, and the further away the dancers are. After reaching the depth of the recursive form, the dancers retrace their steps and come back to where they began. The music (also created by myself) follows this structure with a muted electronic beat that grows sharper as we work towards the middle of the form.",
       link: {
         video: "",
         thumbnail: ""

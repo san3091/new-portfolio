@@ -2,14 +2,16 @@
   import { fade } from 'svelte/transition';
   export let header
   export let body
+  export let media
   export let mediaWidth = '65%'
 </script>
 
-<div 
+<div
   class='work'
   style='--media-width: {mediaWidth}'
   in:fade={{delay: 700, duration: 500}} out:fade>
   <div class='media'>
+    <img src={media} alt={header} />
   </div>
   <div class='text'>
     <h2>{header}</h2>
@@ -18,6 +20,10 @@
 </div>
 
 <style>
+  img {
+    width: 100%;
+  }
+
   .work {
     display: flex;
     flex-direction: row;
