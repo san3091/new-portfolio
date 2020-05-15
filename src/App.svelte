@@ -55,6 +55,11 @@
 </main>
 
 <style>
+
+  :global(p) {
+    line-height: 24px;
+  }
+
   main {
     display: flex;
     flex-direction: row;
