@@ -8,7 +8,7 @@
 <div 
   class='work'
   style='--media-width: {mediaWidth}'
-  in:fade={{delay: 1000, duration: 400}} out:fade>
+  in:fade={{delay: 700, duration: 500}} out:fade>
   <div class='media'>
   </div>
   <div class='text'>
