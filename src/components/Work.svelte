@@ -57,6 +57,7 @@
   img {
     object-fit: contain;
     flex: 1;
+    max-height: 100%;
   }
 
   .text {

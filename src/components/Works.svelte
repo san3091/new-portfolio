@@ -35,6 +35,7 @@
     width: 100%;
     flex: 1;
   }
+  
   .works {
     width: 100%;
     display: flex;
