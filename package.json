@@ -1,10 +1,11 @@
 {
-  "name": "svelte-app",
+  "name": "portfolio",
   "version": "1.0.0",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public"
+    "start": "sirv public",
+    "deploy": "gh-pages -b deploy -d public"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.0",
@@ -16,6 +17,12 @@
     "rollup-plugin-terser": "^5.1.2",
     "svelte": "^3.0.0"
   },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
   "dependencies": {
     "sirv-cli": "^0.4.4",
     "svelte-routing": "^1.4.0"
