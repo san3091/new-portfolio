@@ -12,11 +12,12 @@
 
 <div class='works-container' bind:clientHeight={worksHeight}>
   <div class='works'>
-    <div class='work-container' style='--max-height: {worksHeight - 104}px'> 
+    <div class='work-container' style='--max-height: {worksHeight - 104}px'>
       <Work
         header={selectedWork.title}
         body={selectedWork.description}
-        media={selectedWork.media} />
+        media={selectedWork.media}
+        outLink={selectedWork.outLink} />
     </div>
     <SubNav
       navItems={works}
@@ -42,9 +43,9 @@
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .work-container {
     display: flex;
-    height: var(--max-height); 
+    height: var(--max-height);
   }
 </style>

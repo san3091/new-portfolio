@@ -20,9 +20,8 @@
     {
       id: uid++,
       title: "Catalytic Soundstream",
-      description: "<p>Ken Vandermark has had a long-term dream of a streaming platform for free jazz and improvised music that would compensate artists fairly and would facilitate the discovery of new projects as well as provide education on the history of the genre.</p><p>After the cancellation of all performances and rehearsals due to COVID-19, seeing artists suffer economically all around me—and with Max by my side—I felt more motivated than ever to build the Catalytic Soundstream. We got to work, Max focused on creating an amazing ui while I took care of the third party integrations with Patreon on the Rails backend and DevOps stuff.</p><p>We are very close to having an MVP to start beta testing with members of the cooperative and I cannot wait for this to be live and to keep improving and growing the system to serve the community of artists who most need exposure and resources to sustain their practice.</p>",
-      outLink: "https://catalyticsound.com/quarterly/9/index.html",
-      media: "images/cq-9.png"
+      description: "<p>Ken Vandermark has had a long-term dream of a streaming platform for free jazz and improvised music that would compensate artists fairly and would facilitate the discovery of new projects as well as provide education on the history of the genre.</p><p>After the cancellation of all performances and rehearsals due to COVID-19, seeing artists suffer economically all around me—and with Max by my side—I felt more motivated than ever to build the Catalytic Soundstream. We got to work, Max focused on creating an amazing ui while I took care of the third party integrations with Patreon on the Rails backend and DevOps stuff.</p>",
+      media: "images/catalytic-logo.png"
     },
   ]
 </script>

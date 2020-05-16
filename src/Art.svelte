@@ -21,16 +21,14 @@
       id: uid ++,
       title: "Is It You?",
       description: "Devised in collaboration with Charlotte Vail and Emily Soong. Is It You is a comical exploration of loneliness, friendship, online dating, and masculiinity.",
-      media: {},
+      media: "",
       outLink: "https://vimeo.com/382508775",
     },
     {
       id: uid++,
       title: "Or What",
       description: "Inspired by the creative process of Noa Zuk and Ohad Fishof, I generated an electronic rhythmic sequence with ML Magenta in Ableton and produced movement to that structure. I wanted to explore desire and trepidation, the moment of confidently shooting your shit with your crush and the following insecurity and trepidation. The process of seduction as a codified structured and yet endlessly variating performance.",
-      media: {
-        image: "images/or-what-1.jpg",
-      },
+      media: "images/or-what-score.jpg",
       outLink: "https://vimeo.com/349680153"
     },
     {

@@ -10,7 +10,7 @@
 
 <nav>
   {#each navItems as navItem, index}
-    <button 
+    <button
       class:selected={navItem == selectedWork}
       in:fly="{{x: -200, duration: calcDuration(index)}}"
       out:fade
@@ -37,6 +37,7 @@
 
   button {
     position: relative;
+    cursor: pointer;
     border: none;
     background-color: transparent;
     transition: .5s;

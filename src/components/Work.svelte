@@ -3,6 +3,7 @@
   export let header
   export let body
   export let media
+  export let outLink
   export let mediaWidth = '65%'
 </script>
 
@@ -16,12 +17,21 @@
   <div class='text'>
     <h2>{header}</h2>
     <p>{@html body}</p>
+    {#if outLink}
+      <p>
+        <a href={outLink} target="_blank">Check it out!</a>
+      </p>
+    {/if}
   </div>
 </div>
 
 <style>
   img {
     width: 100%;
+  }
+
+  a {
+    color: red;
   }
 
   .work {

@@ -6,6 +6,7 @@
   import Art from './Art.svelte'
   import Tech from './Tech.svelte'
   import Contact from './Contact.svelte'
+  import Home from './Home.svelte'
 
   export let url = ""
 
@@ -52,6 +53,9 @@
       <Route path="contact">
         <Contact />
       </Route>
+      <Route path="/">
+        <Home />
+      </Route>
     <section>
   </Router>
 </main>
@@ -77,7 +81,7 @@
     border: 1px solid black;
     width: 100%;
   }
-  
+
   .content::-webkit-scrollbar {
     display: none;
   }

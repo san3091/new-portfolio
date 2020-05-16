@@ -38,6 +38,7 @@
 
   div {
     margin-bottom: 15px;
+    cursor: pointer;
   }
-  
+
 </style>
