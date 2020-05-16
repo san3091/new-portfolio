@@ -56,7 +56,7 @@
       <Route path="/">
         <Home />
       </Route>
-    <section>
+    </section>
   </Router>
 </main>
 
