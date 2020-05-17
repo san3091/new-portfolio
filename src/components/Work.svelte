@@ -10,7 +10,7 @@
 <div
   class='work'
   style='--media-width: {mediaWidth}'
-  in:fade={{delay: 700, duration: 500}} out:fade>
+  in:fade={{delay: 300, duration: 500}} out:fade>
   <div class='media'>
     <img src={media} alt={header} />
   </div>

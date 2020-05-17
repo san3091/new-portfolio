@@ -37,7 +37,7 @@
   }
 </script>
 
-<div id='contact' transition:fade>
+<div id='contact' in:fade={{delay: 300, duration: 500}} out:fade>
   {#if !messageSent}
     <form>
         <input id='name' bind:value={name} type='text' name='name'>
