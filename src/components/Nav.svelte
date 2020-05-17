@@ -73,9 +73,9 @@
   .page-links {
     z-index: 1;
     transform: rotate(var(--angle));
-    position: relative;
-    right: 50px;
-    bottom: 150px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
     width: 145px;
   }
   
