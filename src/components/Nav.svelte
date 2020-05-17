@@ -66,6 +66,8 @@
   h1 {
     position: relative;
     background-color: white;
+    white-space: nowrap;
+    padding: 0 10px;
   }
 
   .page-links {
@@ -78,7 +80,6 @@
   }
   
   .home-link {
-    min-width: 330px;
     transform: rotate(var(--home-angle));
   }
 
