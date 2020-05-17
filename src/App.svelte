@@ -12,11 +12,7 @@
 
   let nextVisible = true
   let navigating = false
-  const navItems = [{
-      route: '/',
-      title: '<h1>Santiago <br> Quintana</h1>',
-      isHeader: true
-    },
+  const navItems = [
     { route: 'bio',
       title: 'Bio'
     },
@@ -72,14 +68,16 @@
     flex-direction: row;
     justify-content: space-between;
     height: 100%;
+    width: 100%;
   }
 
   .content {
     position: relative;
     display: flex;
     flex: 1;
-    margin: 40px;
+    margin: 40px 40px 40px 0;
     border: 1px solid black;
+    border-left: none;
     width: 100%;
   }
 
