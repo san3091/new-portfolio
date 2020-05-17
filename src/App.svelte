@@ -64,6 +64,7 @@
 
   :global(p) {
     line-height: 24px;
+    font-size: 14px;
   }
 
   main {

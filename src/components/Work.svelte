@@ -65,5 +65,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: scroll;
   }
 </style>

@@ -28,16 +28,14 @@
 
 <style>
   .works-container {
+    position: absolute;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: 20px;
-    width: 100%;
-    flex: 1;
   }
   
   .works {
     width: 100%;
+    padding: 20px;
     display: flex;
     flex: 1;
     flex-direction: column;
