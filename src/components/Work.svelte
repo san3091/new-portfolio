@@ -14,14 +14,16 @@
   <div class='media'>
     <img src={media} alt={header} />
   </div>
-  <div class='text'>
-    <h2>{header}</h2>
-    <p>{@html body}</p>
-    {#if outLink}
-      <p>
-        <a href={outLink} target="_blank">Check it out!</a>
-      </p>
-    {/if}
+  <div class='text-container'>
+    <div class='text'>
+      <h2>{header}</h2>
+      {@html body}
+      {#if outLink}
+        <p>
+          <a href={outLink} target="_blank">Check it out!</a>
+        </p>
+      {/if}
+    </div>
   </div>
 </div>
 
@@ -37,6 +39,7 @@
   .work {
     display: flex;
     flex-direction: row;
+    align-items: center;
     flex: 1;
     box-sizing: border-box;
     width: 100%;
@@ -60,11 +63,16 @@
     max-height: 100%;
   }
 
-  .text {
-    padding: 20px;
+  .text-container {
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
     overflow: scroll;
+  }
+
+  .text {
+    margin: auto;
+    padding: 20px;
   }
 </style>
