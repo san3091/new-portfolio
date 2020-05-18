@@ -55,6 +55,8 @@
         <p class='error-message'>{errorMessage}</p>
       {/if}
     </form>
+  {:else}
+    <p>Thanks, talk soon!</p>
   {/if}
 </div>
 
@@ -98,6 +100,7 @@
     border: 1px solid black;
     height: 40px;
     transition: .5s;
+    cursor: pointer;
   }
 
   button:hover {
