@@ -18,7 +18,7 @@
     e.preventDefault()
     if (name && email && message && !honeypot && !sending) {
       sending = true
-      var url = 'https://script.google.com/macros/s/AKfycbzRZDcDygipswfktZnpvNlzkZr95KF2YgPocqwkQg/exec'
+      var url = 'https://script.google.com/macros/s/AKfycbyyANMYoUmtYwPf_1XFLf6-C84jZJkHlt0msZTXt9_jkPvb2c4E/exec'
       var xhr = new XMLHttpRequest()
       xhr.open('POST', url)
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
@@ -39,7 +39,7 @@
 
 <div id='contact' in:fade={{delay: 300, duration: 500}} out:fade>
   {#if !messageSent}
-    <form>
+    <form class="gform">
         <input id='name' bind:value={name} type='text' name='name'>
         <label for='name'>Name</label>
         <input id='email' bind:value={email} type='email' name='email'>
@@ -68,7 +68,7 @@
     height: 100%;
     width: 100%;
   }
-  
+
   form {
     display: flex;
     flex-direction: column;
