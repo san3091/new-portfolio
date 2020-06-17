@@ -2,7 +2,7 @@
   import { onMount } from 'svelte'
   import { fade } from 'svelte/transition'
   // import PhotoCarousel from './components/PhotoCarousel.svelte'
-
+  let height
   let photos = Array
     .from({ length: 40 }, (_, i) => i + 1)
     .map( number => `images/santiagos/${number}.jpg`)
@@ -22,7 +22,10 @@
   })
 </script>
 
-<div class="slideshow" in:fade={{delay: 400, duration: 800}}>
+<div class="slideshow" 
+  in:fade={{delay: 400, duration: 800}}
+  bind:clientHeight={height}
+  style='--photo-height:{height * 0.75}px'>
   <!-- <PhotoCarousel carouselPhotos={photos} /> -->
   <div class="slideshow-container">
     {#each photos as src}
@@ -35,27 +38,25 @@
 
 <style>
   .slideshow {
-    height: 100%;
-    overflow: hidden;
+    overflow: scroll;
+    margin: 10px;
+    display: flex;  
+    flex-direction: column;
   }
 
   .slideshow-container {
-    position: relative;
-    margin-left: 80px;
-    height: 100%;
-    max-width: 100%;
     display: flex;
-    justify-content: start;
-    align-items: center;
-
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .slideshow-item {
-    height: 470px;
+    height: var(--photo-height);
+    margin: 10px;
   }
 
   img {
-    height: 100%;
+    max-height: 100%;
   }
 
 </style>

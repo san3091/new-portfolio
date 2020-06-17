@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from 'svelte'
   import { fade } from 'svelte/transition'
 
   let photos = Array
