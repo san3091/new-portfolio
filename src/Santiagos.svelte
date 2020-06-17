@@ -25,7 +25,7 @@
 <div class="slideshow" 
   in:fade={{delay: 400, duration: 800}}
   bind:clientHeight={height}
-  style='--photo-height:{height * 0.75}px'>
+  style='--photo-height:{height * 0.85}px'>
   <!-- <PhotoCarousel carouselPhotos={photos} /> -->
   <div class="slideshow-container">
     {#each photos as src}
