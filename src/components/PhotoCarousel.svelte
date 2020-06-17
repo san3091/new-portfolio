@@ -1,11 +1,7 @@
 <script>
 	import {fade} from 'svelte/transition'
 
-	export let carouselPhotos = [
-		'https://picsum.photos/300/200?random=1',
-		'https://picsum.photos/300/200?random=2',
-		'https://picsum.photos/300/200?random=3'
-	]
+	export let carouselPhotos
 
 	let index = 0
 
@@ -14,14 +10,26 @@
 	}
 </script>
 
-<style>
-	img, button {
-		position: absolute;
-	}
-</style>
-
-{#each [carouselPhotos[index]] as src (index)}
-	<img transition:fade {src} alt="" />
-{/each}
+<div class="container">
+  {#each [carouselPhotos[index]] as src (index)}
+    <img transition:fade {src} alt="" />
+  {/each}
+</div>
 
 <button on:click={next}>onwards</button>
+
+<style>
+	img {
+    object-fit: contain;
+    position: absolute;
+    height: 50%;
+    max-width: 100%;
+  }
+
+  .container {
+    border: 5px solid green;
+    height: 300px;
+    width: 500px;
+  }
+</style>
+

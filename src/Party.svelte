@@ -1,5 +1,24 @@
 <script>
   import { fade } from 'svelte/transition'
+
+  let photos = Array
+    .from({ length: 40 }, (_, i) => i + 1)
+    .map( number => `images/santiagos/${number}.jpg`)
+
+  function preload(src) {
+    return new Promise(function(resolve) {
+      let img = new Image()
+      img.onload = resolve
+      img.src = src
+    })
+  }
+
+  onMount(() => {
+    photos.map(photoUrl => {
+      preload(photoUrl)
+    })
+  })
+
 </script>
 
 <div class="party-container">

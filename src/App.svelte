@@ -8,7 +8,7 @@
   import Contact from './Contact.svelte'
   import Home from './Home.svelte'
   import Party from './Party.svelte'
-  import PhotoCarousel from './components/PhotoCarousel.svelte'
+  import Santiagos from './Santiagos.svelte'
 
   export let url = ""
 
@@ -62,7 +62,7 @@
         <Party />
       </Route>
       <Route path="/1000-santiagos-inspiration">
-        <PhotoCarousel />
+        <Santiagos />
       </Route>
     </section>
   </Router>
