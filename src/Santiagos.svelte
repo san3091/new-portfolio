@@ -1,6 +1,8 @@
 <script>
   import { onMount } from 'svelte'
   import { fade } from 'svelte/transition'
+  import { Link } from 'svelte-routing'
+
   // import PhotoCarousel from './components/PhotoCarousel.svelte'
   let height
   let photos = Array
@@ -22,11 +24,14 @@
   })
 </script>
 
-<div class="slideshow" 
+
+<div class="slideshow"
   in:fade={{delay: 400, duration: 800}}
   bind:clientHeight={height}
   style='--photo-height:{height * 0.85}px'>
-  <!-- <PhotoCarousel carouselPhotos={photos} /> -->
+  <div class="back">
+    <Link to="night-of-1000-santiagos">Get me out of here</Link>
+  </div>
   <div class="slideshow-container">
     {#each photos as src}
       <div class="slideshow-item">
@@ -37,10 +42,16 @@
 </div>
 
 <style>
+  .back {
+    margin-left: 60px;
+    padding: 20px 0;
+    text-decoration: underline;
+  }
+
   .slideshow {
     overflow: scroll;
     margin: 10px;
-    display: flex;  
+    display: flex;
     flex-direction: column;
   }
 
