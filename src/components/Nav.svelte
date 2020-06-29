@@ -57,6 +57,8 @@
   @media only screen and (max-width: 1000px) {
     nav {
       align-items: center;
+      margin: 0;
+      text-align: center;
     }
 
     .items {
@@ -64,6 +66,7 @@
     }
 
     div {
+      min-width: 70px;
       margin-bottom: 0;
       margin-right: 10px;
     }

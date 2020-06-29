@@ -87,6 +87,10 @@
     main {
       flex-direction: column;
     }
+
+    .content {
+      width: auto;
+    }
   }
 
 </style>
