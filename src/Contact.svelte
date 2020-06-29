@@ -112,4 +112,16 @@
     font-size: 14px;
     color: red;
   }
+
+  @media only screen and (max-width: 1000px) {
+    #contact {
+      display: block;
+      padding-top: 60px;
+    }
+
+    form {
+      margin: 0 auto;
+      width: 60%;
+    }
+  }
 </style>
