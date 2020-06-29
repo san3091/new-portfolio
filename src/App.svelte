@@ -12,11 +12,7 @@
 
   let nextVisible = true
   let navigating = false
-  const navItems = [{
-      route: '/',
-      title: '<h1>Santiago <br> Quintana</h1>',
-      isHeader: true
-    },
+  const navItems = [
     { route: 'bio',
       title: 'Bio'
     },
@@ -85,6 +81,19 @@
 
   .content::-webkit-scrollbar {
     display: none;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    main {
+      flex-direction: column;
+    }
+
+    .content {
+      width: auto;
+      height: 100%;
+      overflow: auto;
+      margin: 20px;
+    }
   }
 
 </style>

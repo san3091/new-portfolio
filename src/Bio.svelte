@@ -27,4 +27,16 @@
     height: 100%;
     display: flex;
   }
+
+  @media only screen and (max-width: 1000px) {
+
+    .bio {
+      display: block;
+      padding: 15px;
+    }
+
+    .bio-container {
+      display: block;
+    }
+  }
 </style>

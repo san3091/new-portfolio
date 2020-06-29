@@ -75,4 +75,23 @@
     margin: auto;
     padding: 20px;
   }
+
+  @media only screen and (max-width: 1000px) {
+    .work {
+      flex-direction: column;
+    }
+
+    .text-container {
+      overflow: visible;
+    }
+
+    .text {
+      min-height: 100%;
+    }
+
+    .media {
+      border-bottom: 1px solid black;
+      border-right: none;
+    }
+  }
 </style>

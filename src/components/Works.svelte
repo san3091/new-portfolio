@@ -32,7 +32,7 @@
     height: 100%;
     display: flex;
   }
-  
+
   .works {
     width: 100%;
     padding: 20px;
@@ -46,5 +46,11 @@
   .work-container {
     display: flex;
     height: var(--max-height);
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .works {
+      flex-direction: column-reverse;
+    }
   }
 </style>
