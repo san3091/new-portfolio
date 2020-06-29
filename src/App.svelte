@@ -85,11 +85,12 @@
 
   @media only screen and (max-width: 1000px) {
     main {
-      flex-direction: column;
+      display: block;
     }
 
     .content {
       width: auto;
+      height: 100%;
     }
   }
 
