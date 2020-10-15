@@ -21,7 +21,7 @@
       id: uid++,
       title: "Catalytic Soundstream",
       description: "<p>Ken Vandermark has had a long-term dream of a streaming platform for free jazz and improvised music that would compensate artists fairly and would facilitate the discovery of new projects as well as provide education on the history of the genre.</p><p>After the cancellation of all performances and rehearsals due to COVID-19, seeing artists suffer economically all around me—and with Max by my side—I felt more motivated than ever to build the Catalytic Soundstream. We got to work, Max focused on creating an amazing ui while I took care of the third party integrations with Patreon on the Rails backend and DevOps stuff.</p>",
-      media: "images/catalytic-logo.png"
+      media: "images/catalyticsoundstream.png"
     },
   ]
 </script>
