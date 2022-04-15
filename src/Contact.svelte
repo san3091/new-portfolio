@@ -18,10 +18,10 @@
     e.preventDefault()
     if (name && email && message && !honeypot && !sending) {
       sending = true
-      var url = 'https://script.google.com/macros/s/AKfycbyyANMYoUmtYwPf_1XFLf6-C84jZJkHlt0msZTXt9_jkPvb2c4E/exec'
+      var url = 'https://formspree.io/f/mrgjyykl'
       var xhr = new XMLHttpRequest()
       xhr.open('POST', url)
-      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+      xhr.setRequestHeader("Accept", "application/json")
       xhr.onreadystatechange = () => {
         if (xhr.readyState === 4 && xhr.status === 200) {
           messageSent = true
