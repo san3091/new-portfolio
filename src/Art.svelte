@@ -17,13 +17,6 @@
       outLink: "https://vimeo.com/401470006",
       media: "images/sestina-score.jpg"
     },
-    // {
-    //   id: uid ++,
-    //   title: "Is It You?",
-    //   description: "<p>Devised in collaboration with Charlotte Vail and Emily Soong. Is It You is a comical exploration of loneliness, friendship, online dating, and masculiinity.<p>",
-    //   media: "",
-    //   outLink: "https://vimeo.com/382508775",
-    // },
     {
       id: uid++,
       title: "Or What",
@@ -38,12 +31,6 @@
       media: "images/99-score.jpg",
       outLink: "https://vimeo.com/349680536",
     },
-    // {
-    //   id: uid++,
-    //   title: "Concentric",
-    //   description: "",
-    //   media: ""
-    // }
   ]
 </script>
 

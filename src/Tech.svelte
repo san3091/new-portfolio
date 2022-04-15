@@ -3,6 +3,9 @@
 
   let uid = 1
   const tech = [
+    /* { */
+    /*   description: "something about my talk on design and consent" */
+    /* }, */
     {
       id: uid++,
       title: "CQ #8",
